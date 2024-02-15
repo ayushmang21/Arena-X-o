@@ -1,3 +1,6 @@
+<a href="https://wakatime.com/badge/github/ayushmang21/Arena-X-o"><img src="https://wakatime.com/badge/github/ayushmang21/Arena-X-o.svg" alt="waketime"></a>
+<br>
+<br>
 Here's my first Mini-Project -
 <h1>Arena-X</h1>
 <!-- <br> -->
