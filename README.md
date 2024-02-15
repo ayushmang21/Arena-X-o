@@ -8,3 +8,5 @@ Here's my first Mini-Project
 <br>
 <br>
 <br>
+![image](https://github.com/ayushmang21/Arena-X-o/assets/146174821/80a1066e-2fd0-4ea6-b89f-eed938ecd16c)
+<img src="https://github.com/ayushmang21/Arena-X-o/assets/146174821/80a1066e-2fd0-4ea6-b89f-eed938ecd16c" width="50%" height="50%">
