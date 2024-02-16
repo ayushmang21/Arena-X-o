@@ -101,4 +101,4 @@ const ManageTour = () => {
     )
 }
 
-export default ManageTour
+export default ManageTour;
