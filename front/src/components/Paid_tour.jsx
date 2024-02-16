@@ -69,7 +69,7 @@ const Paid_tour = () => {
   return (
     <div>
 
-      <div className='form_head py-3'>
+      <div className='form_head2 transbox py-3'>
         Paid Tournaments
       </div>
 

@@ -88,7 +88,7 @@ const ManageTour = () => {
 
     return (
         <div>
-            <div className='form_head py-3'>
+            <div className='form_head2 py-3 transbox'>
                 Manage Your Tournaments
             </div>
 

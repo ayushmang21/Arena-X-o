@@ -56,6 +56,14 @@
     color: #1e2123;
     background-color: #ffffff;
 }
+.form_head2{
+    text-align: center;
+    font-size: 80px;
+    font-family: Josefin Sans;
+    font-weight: 600;
+    color: #ffffff;
+    /* background-color: #ffffff; */
+}
 .create_btn{
     /* padding: px; */
     font-family: Saira;

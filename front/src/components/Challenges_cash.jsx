@@ -67,7 +67,7 @@ const Challenges_cash = () => {
 
   return (
     <div>
-      <div className='form_head py-3'>
+      <div className='form_head2 transbox py-3'>
         Cash Reward Tournaments
       </div>
       <div className='container-fluid homepg-bg py-5 px-5 w-100 mx-0'>
