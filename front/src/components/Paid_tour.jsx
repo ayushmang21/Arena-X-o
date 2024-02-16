@@ -68,9 +68,14 @@ const Paid_tour = () => {
 
   return (
     <div>
-      <div className='container-fluid'>
+
+      <div className='form_head py-3'>
+        Paid Tournaments
+      </div>
+
+      <div className='container-fluid homepg-bg py-5 px-5 w-100 mx-0'>
         <div className="row g-5">
-            {displayTournamentCards()}
+          {displayTournamentCards()}
         </div>
       </div>
     </div>

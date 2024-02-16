@@ -68,8 +68,11 @@ const Challenges_xp = () => {
   // display the data in form of cards
   return (
     <div>
-      <div className='container'>
-        <div className="row g-4">
+      <div className='form_head py-3'>
+        XP Reward Tournaments
+      </div>
+      <div className='container-fluid homepg-bg py-5 px-5 w-100 mx-0'>
+        <div className="row g-5">
           {displayTournamentCards()}
         </div>
       </div>
