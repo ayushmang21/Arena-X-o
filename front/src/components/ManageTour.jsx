@@ -1,6 +1,7 @@
 import { enqueueSnackbar } from 'notistack';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './manage.css';
+import { apiUrl } from '../lib/api';
 
 const ManageTour = () => {
 
@@ -8,7 +9,7 @@ const ManageTour = () => {
 
     const getTourData = async () => {
 
-        const res = await fetch('http://localhost:5000/tournament/getall');
+        const res = await fetch(apiUrl('/tournament/getall'));
         console.log(res.status);
 
         const data = await res.json();
@@ -24,7 +25,7 @@ const ManageTour = () => {
     const deleteTour = async (id) => {
         console.log(id);
 
-        const res = await fetch('http://localhost:5000/tournament/delete/' + id, {
+        const res = await fetch(apiUrl('/tournament/delete/' + id), {
             method: 'DELETE',
         });
 

@@ -1,7 +1,7 @@
-import React from 'react';
 import './create.css';
 import { useFormik } from 'formik';
 import { enqueueSnackbar } from 'notistack';
+import { apiUrl } from '../lib/api';
 
 const Create_tour = () => {
 
@@ -21,7 +21,7 @@ const Create_tour = () => {
     onSubmit: async (values, { resetForm }) => {
       console.log(values);
 
-      const res = await fetch('http://localhost:5000/tournament/add', {
+      const res = await fetch(apiUrl('/tournament/add'), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -34,6 +34,7 @@ const Create_tour = () => {
 
       if (res.status === 200) {
         enqueueSnackbar('Tournament Created Successfully', { variant: 'success' });
+        resetForm();
       }
       else {
         enqueueSnackbar('Error Creating Tournament', { variant: 'error' });
@@ -77,7 +78,7 @@ const Create_tour = () => {
               aria-label="Default select example"
               id='entry_type'
               onChange={createTour.handleChange}
-              value={createTour.values.entry}
+              value={createTour.values.entry_type}
               required
             >
               <option className='text-muted default'>Select Entry Type</option>
@@ -90,7 +91,7 @@ const Create_tour = () => {
               aria-label="Default select example"
               id='tournament_type'
               onChange={createTour.handleChange}
-              value={createTour.values.type}
+              value={createTour.values.tournament_type}
               required
             >
               <option className='text-muted default'>Select Tournament Type</option>
@@ -108,7 +109,7 @@ const Create_tour = () => {
               aria-label="Default select example"
               id='team_size'
               onChange={createTour.handleChange}
-              value={createTour.values.team}
+              value={createTour.values.team_size}
               required
             >
               <option className='text-muted default'>Select Team Size</option>
@@ -152,7 +153,7 @@ const Create_tour = () => {
             <label htmlFor="">Date & Time</label>
             <input type="datetime-local" id="date_time"
               onChange={createTour.handleChange}
-              value={createTour.values.date}
+              value={createTour.values.date_time}
               required />
 
             <label htmlFor="">Caption</label>

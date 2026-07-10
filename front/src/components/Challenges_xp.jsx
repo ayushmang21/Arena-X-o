@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { apiUrl } from '../lib/api';
 
 const Challenges_xp = () => {
 
@@ -6,7 +7,7 @@ const Challenges_xp = () => {
 
   const getTourData = async () => {
 
-    const res = await fetch('http://localhost:5000/tournament/getxp');
+    const res = await fetch(apiUrl('/tournament/getxp'));
     console.log(res.status);
 
     const data = await res.json();

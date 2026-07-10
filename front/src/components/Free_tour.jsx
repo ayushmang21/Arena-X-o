@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { apiUrl } from '../lib/api';
 
 const Free_tour = () => {
 
@@ -6,7 +7,7 @@ const Free_tour = () => {
 
   const getTourData = async () => {
 
-    const res = await fetch('http://localhost:5000/tournament/getfree');
+    const res = await fetch(apiUrl('/tournament/getfree'));
     console.log(res.status);
 
     const data = await res.json();

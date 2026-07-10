@@ -1,4 +1,3 @@
-import React from 'react';
 import './foot.css';
 
 const Footer = () => {
@@ -23,7 +22,7 @@ const Footer = () => {
                 </div>
 
                 <div className="row justify-content-center user-select-none">
-                    Arena-X Copyright © 2023 Arena-X - All rights reserved || 2023 -2028
+                    Arena-X Copyright &copy; 2023 Arena-X - All rights reserved || 2023 -2028
                 </div>
 
             </div>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { apiUrl } from '../lib/api';
 
 const Challenges_cash = () => {
 
@@ -6,7 +7,7 @@ const Challenges_cash = () => {
 
   const getTourData = async () => {
 
-    const res = await fetch('http://localhost:5000/tournament/getcash');
+    const res = await fetch(apiUrl('/tournament/getcash'));
     console.log(res.status);
 
     const data = await res.json();
